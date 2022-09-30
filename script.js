@@ -6,9 +6,7 @@ for (let i = 1; i <= 16; i++) {
     for (let i = 1; i <= 16; i++) {
         let cellDiv = document.createElement('div');
         cellDiv.classList.add('cell');
-        cellDiv.textContent = 'testing';
+        cellDiv.style.backgroundColor = 'black';
         newDiv.appendChild(cellDiv);
     }
-
-
 }
