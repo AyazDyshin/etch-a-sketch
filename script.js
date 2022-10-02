@@ -14,11 +14,11 @@ document.body.onmouseup = () => (mouseDown = false);
 
 
 
-const colorOnClick = (event) => {
-    event.preventDefault();
-    if (event.type === 'mouseover' && !mouseDown) return
-    event.currentTarget.style.backgroundColor = 'black';
-}
+// const colorOnClick = (event) => {
+//     event.preventDefault();
+//     if (event.type === 'mouseover' && !mouseDown) return
+//     event.currentTarget.style.backgroundColor = 'black';
+// }
 
 const changeSize = (size) => {
     clearGrid();
@@ -44,8 +44,8 @@ const setUpGrid = (size) => {
         for (let i = 1; i <= size; i++) {
             let cellDiv = document.createElement('div');
             cellDiv.classList.add('cell');
-            cellDiv.addEventListener('mouseover', colorOnClick);
-            cellDiv.addEventListener('mousedown', colorOnClick);
+            //cellDiv.addEventListener('mouseover', colorOnClick);
+            // cellDiv.addEventListener('mousedown', colorOnClick);
             newDiv.appendChild(cellDiv);
         }
     }
